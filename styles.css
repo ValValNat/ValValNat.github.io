@@ -1,0 +1,328 @@
+
+/* =====================================
+   1. CUSTOM FONTS
+===================================== */
+
+@font-face {
+    font-family: 'Bespoke Stencil';
+    src: url('./fonts/BespokeStencil-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bespoke Stencil';
+    src: url('./fonts/BespokeStencil-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bespoke Stencil';
+    src: url('./fonts/BespokeStencil-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* =====================================
+   2. GENERAL SETTINGS
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F8F5FC;
+    color: #302541;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Bespoke Stencil', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    color: #62576F;
+}
+
+
+/* =====================================
+   3. HEADER AND NAVIGATION
+===================================== */
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 8%;
+    border-bottom: 1px solid #E9E0F2;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #62576F;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #9B78C9;
+}
+
+nav a#actual {
+    color: #9B78C9;
+}
+
+
+/* =====================================
+   4. MAIN SECTIONS
+===================================== */
+
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+section {
+    padding: 90px 0;
+    border-bottom: 1px solid #E9E0F2;
+}
+
+
+/* =====================================
+   5. HOME
+===================================== */
+
+#home {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h1 {
+    color: #302541;
+    font-size: 64px;
+    margin-bottom: 5px;
+}
+
+#home h2 {
+    color: #9875C5;
+    font-size: 40px;
+    margin-top: 0;
+}
+#home p {
+    max-width: 650px;
+    font-size: 20px;
+}
+
+
+/* =====================================
+   6. ABOUT ME
+===================================== */
+
+#about {
+    text-align: center;
+}
+
+#about img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #DCCBF2;
+    box-shadow: 8px 8px 0 #E9DFF5;
+}
+
+#about h2 {
+    margin-bottom: 5px;
+}
+
+#about h3 {
+    color: #9875C5;
+}
+
+#about > p {
+    max-width: 750px;
+    margin: 20px auto 40px;
+}
+
+
+/* =====================================
+   7. TECHNOLOGIES
+===================================== */
+
+.technology-category {
+    background-color: #FFFFFF;
+    border: 1px solid #E9E0F2;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.technology-category:hover {
+    transform: translateY(-4px);
+}
+
+.technology-category h4 {
+    color: #7654A6;
+    margin-top: 0;
+}
+
+.technology-category ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.technology-category li {
+    background-color: #F0E9F9;
+    color: #594276;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+/* =====================================
+   8. PROJECTS
+===================================== */
+
+#projects {
+    text-align: center;
+}
+
+#projects h3 {
+    color: #9875C5;
+}
+
+#projects p {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+
+/* =====================================
+   9. CONTACT
+===================================== */
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    display: inline-block;
+    color: #7654A6;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 0 20px;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #B18BD9;
+}
+
+
+/* =====================================
+   10. FOOTER
+===================================== */
+
+footer {
+    background-color: #302541;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    color: #E5DDF0;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* =====================================
+   11. RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #about img {
+        width: 150px;
+        height: 150px;
+    }
+}
